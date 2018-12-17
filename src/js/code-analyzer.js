@@ -18,7 +18,7 @@ const typeQuery = (obj,type) => (obj['type']==type);
 
 
 const remove_white_spaces  = (string) => {
-    exchange(exchange(string,'\n ','\n'),'\n\n','\n');
+    string = exchange(exchange(string,'\n ','\n'),'\n\n','\n');
     while(string[0]==' ' ||string[0]=='\n')
         string = string.substring(1,string.length);
     return string;
